@@ -9,8 +9,11 @@ body {
   background: yellow;
   position: relative;
   display: flex;
-  justify-content: space-evenly;
+  /* flex-direction: column; */
+  justify-content: center;
   width: 97vw;
+  /* align-items: center; */
+  /* height: 800px; */
 }
 .flexbox-container::before {
   content: "Flexbox Container";
@@ -30,10 +33,13 @@ body {
 
 .flexbox-item-1 {
   min-height: 100px;
+  flex-grow: 1;
 }
 .flexbox-item-2 {
   min-height: 200px;
+  flex-grow: 2;
 }
 .flexbox-item-3 {
   min-height: 300px;
+  flex-shrink: 0;
 }
