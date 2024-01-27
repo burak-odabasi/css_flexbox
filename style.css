@@ -6,9 +6,11 @@ body {
 }
 
 .flexbox-container {
-  display: flex;
   background: yellow;
   position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  width: 97vw;
 }
 .flexbox-container::before {
   content: "Flexbox Container";
