@@ -1,0 +1,37 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: rgb(48, 46, 46);
+}
+
+.flexbox-container {
+  display: flex;
+  background: yellow;
+  position: relative;
+}
+.flexbox-container::before {
+  content: "Flexbox Container";
+  position: absolute;
+  top: -45px;
+  color: gold;
+  font-size: 2rem;
+}
+
+.flexbox-item {
+  width: 200px;
+  margin: 10px;
+  border: 3px solid navy;
+  background: rgb(231, 222, 204);
+  padding: 10px;
+}
+
+.flexbox-item-1 {
+  min-height: 100px;
+}
+.flexbox-item-2 {
+  min-height: 200px;
+}
+.flexbox-item-3 {
+  min-height: 300px;
+}
